@@ -1,0 +1,32 @@
+.jumbotron {
+  background-image: url("./imgs/patternpad.svg");
+}
+
+.btn-primary {
+  background-color: rgb(68 86 247);
+  border: 1px solid rgb(68 86 247);
+}
+
+.navbar {
+  background-color: rgb(68 86 247);
+}
+
+body {
+  background-color: rgb(255, 244, 220);
+  font-family: "Roboto Slab", serif;
+}
+
+#joke-container h2 {
+  font-weight: 300;
+}
+
+#title-container {
+  background-color: rgba(255, 244, 220, 0.8);
+  border-radius: 20px;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

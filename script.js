@@ -4,6 +4,9 @@ const retrieveBtn = document.querySelector("#retrieve-btn");
 const img = document.querySelector("#img");
 const jokePar = document.querySelector("#joke-p");
 const NUM_OF_IMGS = 11;
+const titleCont = document.querySelector("#title-container");
+const jokeCont = document.querySelector("#joke-container");
+let currImgNum;
 
 retrieveBtn.addEventListener("click", function () {
   retrieveJoke();
@@ -50,10 +53,12 @@ function retrieveImg(NUM_OF_IMGS) {
   img.setAttribute("src", `./imgs/dad-${imgNum}.jpeg`);
 }
 
+//pick random image number to insert into src, make sure it isn't 0 or previous image number
 function pickRandNum(num) {
   let randNum = 0;
-  while (randNum === 0) {
-    randNum = Math.floor(Math.random() * NUM_OF_IMGS);
+  while (randNum === 0 || randNum === currImgNum) {
+    randNum = Math.floor(Math.random() * num);
   }
+  currImgNum = randNum;
   return randNum;
 }
