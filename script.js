@@ -55,6 +55,7 @@ function retrieveImg(NUM_OF_IMGS) {
 
 //pick random image number to insert into src, make sure it isn't 0 or previous image number
 function pickRandNum(num) {
+  debugger;
   let randNum = 0;
   while (randNum === 0 || randNum === currImgNum) {
     randNum = Math.floor(Math.random() * num);
